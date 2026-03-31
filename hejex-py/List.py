@@ -51,4 +51,4 @@ lst2 = ""
 for i in lst1:
     lst2 += str(i)
 
-print(lst2)
+print(int(lst2))
