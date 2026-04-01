@@ -1,22 +1,93 @@
-'''n = 321
-rev = 0
+#reverse Number
 
-while(n > 0):
-    digit = n % 10 #321 % 10 = 1
-    rev = rev * 10 + digit#0*10 + 1 =1
-    n = n // 10 #321
+
+'''n = 321 #32,3 , 0
+rev = 0 # 1, 12 123
+
+while(n > 0): #321 > 0 T, 32 > 0 T, 2 > 0 T
+    digit = n % 10 #321 % 10 =1 , 32 % 10 = 3 % 10
+    rev = rev * 10 + digit#0*10 + 1 = 1 , 1 * 10 + 2 = 10+1 = 12, 12 * 10 + 3 = 120 +3 = 123
+    n = n // 10 #321 // 10 = 32, 32 // 10 = 3 // 10
 
 print(rev)'''
-    
-num = 121
+
+
+#Add the each number    
+'''num = 121
 total = 0
 
-for digit in str(num):
-    total += int(digit)
+for digit in str(num): #"121"
+    total += int(digit) #0+1 = 1+2 =3+1 =4
 
-print(total)
-    
+print(total)'''
 
-    
-    
 
+
+#find the second Largest Number
+
+''''lst = [10,45,32,67,89,23]
+
+largest = 0
+
+second = 0
+
+for i in range(len(lst):#10
+    if(lst[i] > largest):#10>0 =T, 45 > 10 = T, 32 > 45 =F , 67 > 45 = T, 89 > 67 =  T 23 > 89 =F
+        second = largest#s=0, s=10 s =45 s =67
+        largest = lst[i]#l=10, l = 45, l = 67 l = 89
+
+    elif(lst[i] > second and lst[i] < largest):# 32 > 10 T and 32 < 45 T, 23 > 67 F and 23 < 89 F
+        second = lst[i]#32
+
+
+print('Second Largest:', second)'''
+
+
+
+#find the odd and even number
+
+'''lst = [11,22,33,44,55,66]
+
+even = []
+
+odd = []
+
+for i in range(len(lst)):
+    if(lst[i] % 2 == 0):
+        even.append(lst[i])
+
+    #elif(lst[i] != 0):
+    else:
+        odd.append(lst[i])
+
+
+print('Even Number:',even)
+print('Odd Number:',odd)'''
+
+#find squares list
+
+'''square_List = []
+
+for squ in range(1,21):
+    square_List.append(squ**2)
+    #a = squ * squ
+    #square_List.append(a)
+
+
+print('Square List:',square_List)'''
+
+#Rotation List(Left/Right)
+
+"""lst = [1, 2, 3, 4, 5]
+
+rot = input('Enter rotation (left/right): ')
+number = int(input("Enter number of rotations: "))
+
+number = number % len(lst)#2 % 5 = 2
+
+if(rot == "left"):
+    lst = lst[number:] + lst[:number] #lst[2:]=[3,4,5] + lst[:2] = [1,2]
+else:
+    lst = lst[-number:] + lst[:-number]
+
+print("Rotated List:", lst)"""
