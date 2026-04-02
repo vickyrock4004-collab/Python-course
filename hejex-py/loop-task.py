@@ -80,7 +80,7 @@ for i in range(rows):#0,1,2
 
 #print the pyramid number
 
-"""rows = int(input('Enter a number'))
+'''rows = int(input('Enter a number'))
 
 for i in range(1,rows+1):#1,2,3,4
     for space in range(1,(10-i)+1):#10-1=9=9+1=10
@@ -89,7 +89,7 @@ for i in range(1,rows+1):#1,2,3,4
         print(j, end='')
     for k in range(i - 1,0,-1):
         print(k, end="")
-    print()"""
+    print()'''
 
 
 
@@ -110,3 +110,5 @@ for i in range(1, rows + 1):#1,2,3,4,5
 
 
 
+
+lst =[]

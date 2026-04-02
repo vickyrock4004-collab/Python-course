@@ -91,3 +91,132 @@ else:
     lst = lst[-number:] + lst[:-number]
 
 print("Rotated List:", lst)"""
+
+
+#find the leap year or not
+
+'''year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0): 
+    print(year,"is a leap year.")
+else:
+    print(year, "is not a leap year.")'''
+
+
+
+
+#print prime number
+
+
+"""for num in range(2, 101):
+    prime = 1
+
+    for i in range(2, num):
+        if(num % i == 0):
+            prime = 0
+            break
+            
+    if(prime):
+        print(num, end=" ")"""
+
+
+#recursion function
+
+'''def factorcial(n):
+  if(n == 0):
+    return 1
+  
+  else:
+    return n * factorcial(n-1)
+  
+result = factorcial(5)
+
+print(result)'''
+
+# Using the function find sum and average
+
+'''def number():
+    lst = [22,33,44,55,66]
+
+    total = 0
+
+    for num in lst:
+        total += num
+        
+    average = total / len(lst)
+
+    return total,average
+
+print(number())'''
+
+
+#Pascal's Triangle pattern
+
+"""rows = 5
+
+for i in range(rows):
+    print(" " * (rows - i), end="")
+
+    num = 1
+    for j in range(i + 1):
+        print(num, end=" ")
+        num = num * (i - j) // (j + 1)
+
+    print()"""
+
+#Pattern
+
+rows = 5
+
+'''for i in range(1, rows+1):
+    for j in range(1,i+1):
+        print(j, end="")
+
+    print()'''
+
+'''for i in range(1, rows+1):
+    for j in range(1,i+1):
+        print(i , end='')
+    print()'''
+
+
+
+
+
+'''for i in range(rows):
+    for j in range(rows - i - 1):
+        print(" ", end="")
+    for k in range(2 * i + 1):
+        print("*", end="")
+    print()'''
+        
+
+'''for i in range(rows):#0,1,2,3,4
+    for j in range(i+1):#1
+        print(' ', end="")
+    for k in range(2*(rows - i)-1):#2*5-0 = 10-1=9,2*5-1=2*4=
+        print('*',end='')
+
+    print()'''
+
+
+'''for i in range(1,5+1):
+    for j in range(1,i+1):
+        print(j,end='')
+    print()'''
+
+""""for i in range(1,rows+1):#1,2,3,4,5
+    for j in range(1,i+1):#1,2=1,1,3=22
+        print(i,end="")
+
+    print()"""
+
+for i in range(rows):#0,1,2,3,4
+    for j in range(rows,rows-i-1,-1):#5,4,-1=5,5,
+        print(j,end='')
+    print()
+ 
+ 
+    
+
+    
