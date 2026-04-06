@@ -44,11 +44,22 @@ print(newlst)'''
 #convert
 
 
-lst1 = [11,13,50]#111350
+'''lst1 = [11,13,50]#111350
 
 lst2 = ""
 
 for i in lst1:
     lst2 += str(i)
 
-print(int(lst2))
+print(int(lst2))'''
+
+#find the lowest in list
+my_array = [7, 12, 9, 4, 11, 8]
+'''minVal = my_array[0]
+for i in my_array:
+  if i < minVal:
+    minVal = i
+print('Lowest value:', minVal)'''
+
+my_array.sort()
+print(my_array)

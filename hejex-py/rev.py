@@ -211,12 +211,17 @@ rows = 5
 
     print()"""
 
-for i in range(rows):#0,1,2,3,4
+'''for i in range(rows):#0,1,2,3,4
     for j in range(rows,rows-i-1,-1):#5,4,-1=5,5,
         print(j,end='')
-    print()
+    print()'''
  
- 
+
+for i in range(4):
+    if(i % 2 == 0):
+        continue
+        
+    print(i*i if(i>1) else i+2, end=' ')
     
 
     
