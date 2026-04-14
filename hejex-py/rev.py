@@ -217,11 +217,35 @@ rows = 5
     print()'''
  
 
-for i in range(4):
+'''for i in range(4):
     if(i % 2 == 0):
         continue
         
-    print(i*i if(i>1) else i+2, end=' ')
+    print(i*i if(i>1) else i+2, end=' ')'''
+
+'''s = "Hello 123#"
+
+letters = digits = spaces = special = 0
+
+for ch in s:
+    if ch.isalpha():
+        letters += 1
+    elif ch.isdigit():
+        digits += 1
+    elif ch == ' ':
+        spaces += 1
+    else:
+        special += 1
+
+print("Letters:", letters)
+print("Digits:", digits)
+print("Spaces:", spaces)
+print("Special:", special)'''
+
+
+
+
+
     
 
     
